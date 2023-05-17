@@ -53,16 +53,14 @@ public class DesafioCalcImc2 {
   public static double getAltura() {
 
     System.out.println("Informe a Altura em CM: ");
-    double h = inputDouble();
-    return h;
+    return inputDouble();
 
   }
 
   public static double getPeso() {
 
     System.out.println("Informe o Peso em KG: ");
-    double p = inputDouble();
-    return p;
+    return inputDouble();
 
   }
 
