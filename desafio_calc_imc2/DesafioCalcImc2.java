@@ -16,7 +16,6 @@ public class DesafioCalcImc2 {
       if (executa.equalsIgnoreCase("s")) {
 
         run();
-        executa = "X";
 
       }
 
