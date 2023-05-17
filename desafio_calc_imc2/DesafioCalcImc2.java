@@ -66,7 +66,7 @@ public class DesafioCalcImc2 {
 
   public static double getImc(double peso, double altura) {
 
-    // Altura em cm, devera ser convertida para M antes de ^2
+    // IMC = Peso / Altura ^2
     return peso / Math.pow(altura, 2);
 
   }
