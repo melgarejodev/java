@@ -44,7 +44,7 @@ public class DesafioCalcImc2 {
 
     double imc = getImc(peso, altura);
 
-    System.out.println("Calculo do IMC: " + imc + " (Peso: " + peso + " kg / Altura: " + (altura / 100) + " m)");
+    System.out.println("Calculo do IMC: " + imc + " (Peso: " + peso + " kg / Altura: " + altura + " m)");
     System.out.println("Classificacao: " + getClassificacao(imc));
 
   }
@@ -52,7 +52,8 @@ public class DesafioCalcImc2 {
   public static double getAltura() {
 
     System.out.println("Informe a Altura em CM: ");
-    return inputDouble();
+    // Altura solicitada em CM, retorna em M
+    return inputDouble() / 100;
 
   }
 
@@ -66,7 +67,7 @@ public class DesafioCalcImc2 {
   public static double getImc(double peso, double altura) {
 
     // Altura em cm, devera ser convertida para M antes de ^2
-    return peso / Math.pow((altura / 100), 2);
+    return peso / Math.pow(altura, 2);
 
   }
 
